@@ -1,0 +1,21 @@
+.ant-rate {
+  color: var(--text-tertiary) !important;
+}
+
+.ant-rate-star-full .ant-rate-star-first,
+.ant-rate-star-full .ant-rate-star-second {
+  color: #FFB300 !important;
+}
+
+.ant-rate-star-half .ant-rate-star-first {
+  color: #FFB300 !important;
+}
+
+.ant-rate-star-half .ant-rate-star-second {
+  color: var(--text-tertiary) !important;
+}
+
+.ant-rate-star-hover .ant-rate-star-first,
+.ant-rate-star-hover .ant-rate-star-second {
+  color: #FFB300 !important;
+}

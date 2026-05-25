@@ -1,0 +1,110 @@
+/* ===== 暖调莫兰迪主题 ===== */
+/* 温暖柔和的莫兰迪色系，适合营造温馨舒适的创作氛围 */
+
+[data-theme="morandi-warm"] {
+  /* 主色调 */
+  --primary-color: #C4A882;
+  --primary-hover: #B8956A;
+  --primary-light: #D4B896;
+  --primary-bg: rgba(196, 168, 130, 0.12);
+
+  /* 背景色 */
+  --bg-primary: #F5EDE4;
+  --bg-secondary: #FAF7F3;
+  --bg-card: #FAF7F3;
+  --bg-tertiary: #EDE3D8;
+  --bg-hover: rgba(196, 168, 130, 0.08);
+  --bg-active: rgba(196, 168, 130, 0.15);
+
+  /* 文字色 */
+  --text-primary: #5D4E37;
+  --text-secondary: #8B7D6B;
+  --text-tertiary: #A89B8A;
+  --text-inverse: #FFFFFF;
+
+  /* 强调色 */
+  --accent-primary: #C4A882;
+  --accent-secondary: #D4B896;
+  --accent-success: #A8B89C;
+  --accent-warning: #D4B896;
+  --accent-danger: #C49B8B;
+
+  /* 边框 */
+  --border-color: #D9CFC4;
+  --border-light: #E8E0D6;
+  --border-focus: #C4A882;
+
+  /* 阴影 */
+  --shadow-sm: 0 1px 2px rgba(93, 78, 55, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(93, 78, 55, 0.06), 0 2px 4px -2px rgba(93, 78, 55, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(93, 78, 55, 0.08), 0 4px 6px -4px rgba(93, 78, 55, 0.04);
+  --shadow-xl: 0 20px 25px -5px rgba(93, 78, 55, 0.08), 0 8px 10px -6px rgba(93, 78, 55, 0.04);
+
+  /* 侧边栏 */
+  --sidebar-bg: #FAF7F3;
+  --sidebar-border: #D9CFC4;
+
+  /* 顶部栏 */
+  --header-bg: rgba(250, 247, 243, 0.85);
+
+  /* 卡片 */
+  --card-bg: #FAF7F3;
+  --card-hover-bg: #F5EDE4;
+  --card-shadow: 0 2px 8px rgba(93, 78, 55, 0.06);
+  --card-hover-shadow: 0 8px 24px rgba(93, 78, 55, 0.1);
+
+  /* 状态色 */
+  --success-color: #A8B89C;
+  --success-light: #C8D4BC;
+  --warning-color: #D4B896;
+  --warning-light: #E8D4B0;
+  --error-color: #C49B8B;
+  --info-color: #A8B0C4;
+
+  /* 便利贴色系 */
+  --sticky-note-yellow: #F5ECD7;
+  --sticky-note-green: #E5E8D4;
+  --sticky-note-blue: #DDE4E8;
+  --sticky-note-pink: #EEDDD8;
+  --sticky-note-purple: #E5DDD8;
+  --sticky-note-orange: #EDE0D0;
+  --sticky-note-white: #FAF7F3;
+  --sticky-note-gray: #E5DFD8;
+
+  /* 莫兰迪色系 */
+  --morandi-yellow: #F5ECD7;
+  --morandi-green: #E5E8D4;
+  --morandi-blue: #DDE4E8;
+  --morandi-pink: #EEDDD8;
+  --morandi-purple: #E5DDD8;
+  --morandi-orange: #EDE0D0;
+  --morandi-white: #FAF7F3;
+  --morandi-gray: #E5DFD8;
+}
+
+/* 暖调莫兰迪主题滚动条 */
+[data-theme="morandi-warm"] ::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+[data-theme="morandi-warm"] :hover::-webkit-scrollbar-thumb {
+  background-color: rgba(93, 78, 55, 0.12);
+}
+
+[data-theme="morandi-warm"] ::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(93, 78, 55, 0.25);
+}
+
+[data-theme="morandi-warm"] * {
+  scrollbar-color: transparent transparent;
+}
+
+[data-theme="morandi-warm"] *:hover {
+  scrollbar-color: rgba(93, 78, 55, 0.12) transparent;
+}
+
+/* 暖调莫兰迪主题选中文字 */
+[data-theme="morandi-warm"] ::selection {
+  background-color: rgba(196, 168, 130, 0.25);
+  color: var(--text-primary);
+}

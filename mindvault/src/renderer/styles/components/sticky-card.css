@@ -1,0 +1,321 @@
+/* ===== 拟物便利贴卡片样式 ===== */
+
+.sticky-card {
+  position: relative;
+  border-radius: 4px;
+  padding: 20px 18px 24px;
+  min-height: 160px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  overflow: hidden;
+  /* 基础便利贴样式 */
+  background: linear-gradient(
+    135deg,
+    var(--sticky-bg, #FFF9C4) 0%,
+    var(--sticky-bg-end, #FFF3B0) 100%
+  );
+  box-shadow:
+    /* 底层大阴影 - 模拟纸张厚度 */
+    0 2px 4px rgba(0, 0, 0, 0.04),
+    /* 中层阴影 - 模拟纸张翘起 */
+    0 4px 8px rgba(0, 0, 0, 0.06),
+    /* 上层阴影 - 模拟近距离 */
+    0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+/* 胶带效果 - 顶部 */
+.sticky-card::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%) rotate(var(--tape-rotation, -2deg));
+  width: 60px;
+  height: 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.7) 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* 翻卷效果 - 右下角 */
+.sticky-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(
+    135deg,
+    transparent 50%,
+    rgba(0, 0, 0, 0.04) 50%,
+    rgba(0, 0, 0, 0.06) 60%,
+    rgba(0, 0, 0, 0.03) 100%
+  );
+  border-radius: 0 0 4px 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* 悬停效果 */
+.sticky-card:hover {
+  transform:
+    translateY(-4px)
+    rotate(var(--hover-rotation, 0deg));
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.06),
+    0 8px 16px rgba(0, 0, 0, 0.08),
+    0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-card:hover::after {
+  width: 40px;
+  height: 40px;
+}
+
+/* 按下效果 */
+.sticky-card:active {
+  transform:
+    translateY(-1px)
+    rotate(0deg);
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.06),
+    0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+/* ===== 颜色变体 ===== */
+
+/* 柠檬黄 */
+.sticky-card.sticky-yellow {
+  --sticky-bg: #FFF9C4;
+  --sticky-bg-end: #FFF3B0;
+  --tape-rotation: -2deg;
+  --hover-rotation: 0.5deg;
+}
+
+/* 薄荷绿 */
+.sticky-card.sticky-green {
+  --sticky-bg: #C8E6C9;
+  --sticky-bg-end: #A5D6A7;
+  --tape-rotation: 1deg;
+  --hover-rotation: -0.5deg;
+}
+
+/* 天空蓝 */
+.sticky-card.sticky-blue {
+  --sticky-bg: #BBDEFB;
+  --sticky-bg-end: #90CAF9;
+  --tape-rotation: -1.5deg;
+  --hover-rotation: 0.8deg;
+}
+
+/* 蜜桃粉 */
+.sticky-card.sticky-pink {
+  --sticky-bg: #F8BBD0;
+  --sticky-bg-end: #F48FB1;
+  --tape-rotation: 2deg;
+  --hover-rotation: -0.3deg;
+}
+
+/* 薰衣草紫 */
+.sticky-card.sticky-purple {
+  --sticky-bg: #E1BEE7;
+  --sticky-bg-end: #CE93D8;
+  --tape-rotation: -0.5deg;
+  --hover-rotation: 0.6deg;
+}
+
+/* 珊瑚橙 */
+.sticky-card.sticky-orange {
+  --sticky-bg: #FFCCBC;
+  --sticky-bg-end: #FFAB91;
+  --tape-rotation: 1.5deg;
+  --hover-rotation: -0.7deg;
+}
+
+/* 经典白 */
+.sticky-card.sticky-white {
+  --sticky-bg: #FFFFFF;
+  --sticky-bg-end: #F5F5F5;
+  --tape-rotation: -1deg;
+  --hover-rotation: 0.4deg;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.06),
+    0 4px 8px rgba(0, 0, 0, 0.08),
+    0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* 暖灰 */
+.sticky-card.sticky-gray {
+  --sticky-bg: #D7CCC8;
+  --sticky-bg-end: #BCAAA4;
+  --tape-rotation: 0.8deg;
+  --hover-rotation: -0.4deg;
+}
+
+/* ===== 深色模式便利贴 ===== */
+[data-theme="dark"] .sticky-card {
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.2),
+    0 4px 8px rgba(0, 0, 0, 0.25),
+    0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .sticky-card:hover {
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.25),
+    0 8px 16px rgba(0, 0, 0, 0.3),
+    0 2px 4px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="dark"] .sticky-card::before {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.08) 100%
+  );
+}
+
+/* 深色模式颜色变体 - 降低饱和度 */
+[data-theme="dark"] .sticky-card.sticky-yellow {
+  --sticky-bg: #4a4520;
+  --sticky-bg-end: #3d3a1a;
+}
+
+[data-theme="dark"] .sticky-card.sticky-green {
+  --sticky-bg: #2a3d2b;
+  --sticky-bg-end: #1f3020;
+}
+
+[data-theme="dark"] .sticky-card.sticky-blue {
+  --sticky-bg: #253545;
+  --sticky-bg-end: #1d2d3d;
+}
+
+[data-theme="dark"] .sticky-card.sticky-pink {
+  --sticky-bg: #3d2530;
+  --sticky-bg-end: #351d28;
+}
+
+[data-theme="dark"] .sticky-card.sticky-purple {
+  --sticky-bg: #352540;
+  --sticky-bg-end: #2d1d38;
+}
+
+[data-theme="dark"] .sticky-card.sticky-orange {
+  --sticky-bg: #3d2a20;
+  --sticky-bg-end: #352218;
+}
+
+[data-theme="dark"] .sticky-card.sticky-white {
+  --sticky-bg: #2a2a45;
+  --sticky-bg-end: #232340;
+}
+
+[data-theme="dark"] .sticky-card.sticky-gray {
+  --sticky-bg: #302a28;
+  --sticky-bg-end: #282220;
+}
+
+/* ===== 便利贴内部元素 ===== */
+.sticky-card .sticky-title {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.4;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+  word-break: break-word;
+}
+
+.sticky-card .sticky-content {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  word-break: break-word;
+}
+
+.sticky-card .sticky-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  font-size: 11px;
+  color: var(--text-tertiary);
+}
+
+.sticky-card .sticky-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.sticky-card .sticky-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  font-size: 11px;
+  background: rgba(0, 0, 0, 0.06);
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .sticky-card .sticky-tag {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.sticky-card .sticky-emoji {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.sticky-card .sticky-priority {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  display: flex;
+  gap: 1px;
+}
+
+.sticky-card .sticky-priority .star {
+  font-size: 10px;
+  color: #FFB300;
+}
+
+.sticky-card .sticky-priority .star.empty {
+  color: rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="dark"] .sticky-card .sticky-priority .star.empty {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+/* ===== 便利贴网格布局 ===== */
+.sticky-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* ===== 便利贴列表布局 ===== */
+.sticky-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+}
+
+.sticky-list .sticky-card {
+  min-height: auto;
+  padding: 14px 16px 18px;
+}

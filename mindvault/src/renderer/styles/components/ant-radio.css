@@ -1,0 +1,48 @@
+.ant-radio-wrapper {
+  color: var(--text-primary) !important;
+}
+
+.ant-radio-inner {
+  border-color: var(--border-color) !important;
+  background-color: transparent !important;
+}
+
+.ant-radio-wrapper:hover .ant-radio-inner,
+.ant-radio:hover .ant-radio-inner {
+  border-color: var(--primary-color) !important;
+}
+
+.ant-radio-checked .ant-radio-inner {
+  border-color: var(--primary-color) !important;
+}
+
+.ant-radio-checked .ant-radio-inner::after {
+  background-color: var(--primary-color) !important;
+}
+
+.ant-radio-disabled .ant-radio-inner {
+  background-color: var(--bg-tertiary) !important;
+  border-color: var(--border-color) !important;
+}
+
+.ant-radio-disabled + span {
+  color: var(--text-tertiary) !important;
+}
+
+.ant-radio-group-item {
+  color: var(--text-primary) !important;
+}
+
+/* 深色模式 */
+[data-theme='dark'] .ant-radio-inner {
+  background-color: var(--bg-tertiary) !important;
+  border-color: var(--border-color) !important;
+}
+
+[data-theme='dark'] .ant-radio-checked .ant-radio-inner {
+  border-color: var(--primary-color) !important;
+}
+
+[data-theme='dark'] .ant-radio-checked .ant-radio-inner::after {
+  background-color: var(--primary-color) !important;
+}

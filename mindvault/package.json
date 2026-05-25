@@ -1,0 +1,121 @@
+{
+  "name": "mindvault",
+  "version": "1.0.0",
+  "description": "脑洞集 - 创意记录与整理桌面软件",
+  "main": "dist/main/index.js",
+  "author": "MindVault",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npx tsc -p tsconfig.main.json && node -e \"require('fs').copyFileSync('src/main/preload.js','dist/main/preload.js');require('fs').mkdirSync('dist/main/db',{recursive:true});require('fs').copyFileSync('src/main/db/schema.sql','dist/main/db/schema.sql')\" && concurrently \"vite\" \"wait-on http://localhost:5173 && electron --remote-debugging-port=9222 .\"",
+    "dev:debug": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron --inspect=5858 --inspect-brk --remote-debugging-port=9222 .\"",
+    "dev:web": "vite",
+    "build": "npx tsc -p tsconfig.main.json && node -e \"require('fs').copyFileSync('src/main/preload.js','dist/main/preload.js');require('fs').mkdirSync('dist/main/db',{recursive:true});require('fs').copyFileSync('src/main/db/schema.sql','dist/main/db/schema.sql')\" && vite build && electron-builder",
+    "build:renderer": "vite build",
+    "typecheck": "npx tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.95.2",
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@supabase/supabase-js": "^2.105.4",
+    "@types/react-window": "^1.8.8",
+    "@uiw/react-md-editor": "^4.1.0",
+    "antd": "^6.3.6",
+    "archiver": "^7.0.1",
+    "avvvatars-react": "^0.4.2",
+    "better-sqlite3": "^11.0.0",
+    "echarts": "^5.5.0",
+    "extract-zip": "^2.0.1",
+    "ffmpeg-static": "^5.3.0",
+    "framer-motion": "^11.0.0",
+    "gray-matter": "^4.0.3",
+    "howler": "^2.2.4",
+    "html2canvas": "^1.4.1",
+    "lucide-react": "^0.400.0",
+    "music-metadata": "^11.12.3",
+    "NeteaseCloudMusicApi": "^4.31.0",
+    "openai": "^6.37.0",
+    "pdfkit": "^0.18.0",
+    "qq-music-api": "^1.1.2",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "^6.26.0",
+    "react-window": "^2.2.7",
+    "remark-gfm": "^4.0.1",
+    "sharp": "^0.34.5",
+    "zustand": "^4.5.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/howler": "^2.2.12",
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@types/uuid": "^10.0.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "autoprefixer": "^10.4.0",
+    "concurrently": "^9.0.0",
+    "electron": "^33.2.1",
+    "electron-builder": "^25.0.0",
+    "postcss": "^8.4.0",
+    "puppeteer-core": "^24.43.1",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.6.0",
+    "vite": "^6.0.0",
+    "wait-on": "^8.0.0",
+    "ws": "^8.20.1"
+  },
+  "build": {
+    "appId": "com.mindvault.app",
+    "productName": "脑洞集",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "!node_modules/playwright/**/*",
+      "!node_modules/artplayer/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "node_modules/better-sqlite3/build",
+        "to": "better-sqlite3/build"
+      }
+    ],
+    "asar": true,
+    "asarUnpack": [
+      "node_modules/better-sqlite3/build/**/*",
+      "node_modules/sharp/build/**/*",
+      "node_modules/ffmpeg-static/**/*"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "dir",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "unicode": true,
+      "installerLanguages": [
+        "zh-CN"
+      ],
+      "language": 2052
+    },
+    "npmRebuild": true,
+    "electronDownload": {
+      "mirror": "https://registry.npmmirror.com/-/binary/electron/"
+    }
+  }
+}

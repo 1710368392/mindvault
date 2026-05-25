@@ -1,0 +1,273 @@
+/* ===== Ant Design 风格输入框组件 ===== */
+
+.ant-input {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 4px 11px;
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 1.5714285714285714;
+  background-color: var(--bg-secondary);
+  background-image: none;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  transition: all 0.2s;
+  width: 100%;
+  height: 32px;
+  outline: none;
+}
+
+.ant-input::placeholder {
+  color: var(--text-tertiary);
+}
+
+.ant-input:hover {
+  border-color: var(--primary-color);
+}
+
+.ant-input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.1);
+}
+
+.ant-input-disabled {
+  color: var(--text-tertiary);
+  background-color: var(--bg-tertiary);
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.ant-input-disabled:hover {
+  border-color: var(--border-color);
+}
+
+/* Input Sizes */
+.ant-input-lg {
+  padding: 7px 11px;
+  font-size: 16px;
+  height: 40px;
+}
+
+.ant-input-sm {
+  padding: 0 7px;
+  height: 24px;
+}
+
+/* Input Group */
+.ant-input-group {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+}
+
+.ant-input-group-wrapper {
+  display: inline-block;
+  width: 100%;
+}
+
+.ant-input-group-addon {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  padding: 0 11px;
+  color: var(--text-primary);
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.ant-input-group-addon:first-child {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.ant-input-group-addon:last-child {
+  border-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Input With Prefix/Suffix */
+.ant-input-affix-wrapper {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+  min-width: 0;
+  padding: 4px 11px;
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 1.5714285714285714;
+  background-color: var(--bg-secondary);
+  background-image: none;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.ant-input-affix-wrapper:hover {
+  border-color: var(--primary-color);
+}
+
+.ant-input-affix-wrapper:focus-within {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.1);
+}
+
+.ant-input-prefix,
+.ant-input-suffix {
+  display: flex;
+  flex: none;
+  align-items: center;
+  color: var(--text-secondary);
+}
+
+.ant-input-prefix {
+  margin-right: 4px;
+}
+
+.ant-input-suffix {
+  margin-left: 4px;
+}
+
+.ant-input-affix-wrapper > input.ant-input {
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+/* Textarea */
+.ant-input-textarea {
+  display: inline-block;
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.ant-input-textarea textarea {
+  max-width: 100%;
+  height: auto;
+  min-height: 32px;
+  line-height: 1.5714285714285714;
+  vertical-align: bottom;
+  transition: all 0.3s, height 0s;
+  resize: vertical;
+  padding: 4px 11px;
+}
+
+/* Search Input */
+.ant-input-search {
+  display: inline-flex;
+}
+
+.ant-input-search > .ant-input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.ant-input-search > .ant-input-group-addon {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+}
+
+.ant-input-search > .ant-input-group-addon:last-child {
+  border-left: 0;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  padding: 0 16px;
+}
+
+.ant-input-search > .ant-input-group-addon:last-child:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+
+/* Input Status */
+.ant-input-status-error {
+  border-color: var(--error-color) !important;
+}
+
+.ant-input-status-error:hover {
+  border-color: var(--error-color) !important;
+}
+
+.ant-input-status-error:focus {
+  border-color: var(--error-color) !important;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.1) !important;
+}
+
+.ant-input-affix-wrapper-status-error {
+  border-color: var(--error-color) !important;
+}
+
+.ant-input-affix-wrapper-status-error:hover {
+  border-color: var(--error-color) !important;
+}
+
+.ant-input-affix-wrapper-status-error:focus-within {
+  border-color: var(--error-color) !important;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.1) !important;
+}
+
+.ant-input-status-warning {
+  border-color: var(--warning-color) !important;
+}
+
+.ant-input-status-warning:hover {
+  border-color: var(--warning-color) !important;
+}
+
+.ant-input-status-warning:focus {
+  border-color: var(--warning-color) !important;
+  box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.1) !important;
+}
+
+/* Password */
+.ant-input-password .ant-input-suffix {
+  color: var(--text-tertiary);
+}
+
+.ant-input-password .ant-input-suffix:hover {
+  color: var(--text-secondary);
+}
+
+/* ===== Dark Theme ===== */
+[data-theme='dark'] .ant-input {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+[data-theme='dark'] .ant-input:hover {
+  border-color: var(--primary-color);
+}
+
+[data-theme='dark'] .ant-input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.2);
+}
+
+[data-theme='dark'] .ant-input-affix-wrapper {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+[data-theme='dark'] .ant-input-affix-wrapper:hover {
+  border-color: var(--primary-color);
+}
+
+[data-theme='dark'] .ant-input-affix-wrapper:focus-within {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.2);
+}
+
+[data-theme='dark'] .ant-input-password .ant-input-suffix {
+  color: var(--text-tertiary);
+}

@@ -1,0 +1,70 @@
+/* ===== 经典黑主题变量 ===== */
+[data-theme="dark"] {
+  --primary-color: #8B85FF;
+  --primary-hover: #A9A4FF;
+  --primary-light: #6C63FF;
+  --primary-bg: rgba(139, 133, 255, 0.12);
+
+  --bg-primary: #1a1a2e;
+  --bg-secondary: #232340;
+  --bg-tertiary: #2a2a45;
+  --bg-hover: rgba(255, 255, 255, 0.06);
+  --bg-active: rgba(139, 133, 255, 0.12);
+
+  --text-primary: #e8e8f0;
+  --text-secondary: #a0a0b8;
+  --text-tertiary: #6b6b85;
+  --text-inverse: #1a1a2e;
+
+  --border-color: #363655;
+  --border-light: #2e2e4a;
+  --border-focus: #8B85FF;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.25), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -4px rgba(0, 0, 0, 0.2);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.35), 0 8px 10px -6px rgba(0, 0, 0, 0.2);
+
+  --sidebar-bg: #1e1e36;
+  --sidebar-border: #363655;
+  --header-bg: rgba(35, 35, 64, 0.85);
+
+  --success-color: #34D399;
+  --success-light: #6EE7B7;
+  --warning-color: #FBBF24;
+  --warning-light: #FCD34D;
+  --error-color: #F87171;
+  --info-color: #60A5FA;
+
+  --card-bg: #232340;
+  --card-hover-bg: #2a2a45;
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --card-hover-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* 深色模式滚动条 */
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+[data-theme="dark"] :hover::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+[data-theme="dark"] * {
+  scrollbar-color: transparent transparent;
+}
+
+[data-theme="dark"] *:hover {
+  scrollbar-color: rgba(255, 255, 255, 0.12) transparent;
+}
+
+/* 深色模式选中文字 */
+[data-theme="dark"] ::selection {
+  background-color: rgba(139, 133, 255, 0.3);
+  color: var(--text-primary);
+}

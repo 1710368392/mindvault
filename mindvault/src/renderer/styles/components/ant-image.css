@@ -1,0 +1,70 @@
+.ant-image {
+  border-radius: var(--radius-md, 8px) !important;
+  overflow: hidden !important;
+}
+
+.ant-image-img {
+  border-radius: var(--radius-md, 8px) !important;
+}
+
+.ant-image-mask {
+  border-radius: var(--radius-md, 8px) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+  opacity: 0 !important;
+  transition: opacity 0.2s ease !important;
+}
+
+.ant-image:hover .ant-image-mask {
+  opacity: 1 !important;
+}
+
+.ant-image-mask-info {
+  color: #fff !important;
+  font-size: 13px !important;
+}
+
+.ant-image-preview-operations {
+  background: rgba(0, 0, 0, 0.5) !important;
+  border-radius: var(--radius-md, 8px) !important;
+  padding: 4px 8px !important;
+}
+
+.ant-image-preview-operations-operation {
+  color: rgba(255, 255, 255, 0.85) !important;
+  transition: color 0.2s ease !important;
+}
+
+.ant-image-preview-operations-operation:hover {
+  color: #fff !important;
+}
+
+.ant-image-preview-operations-operation-disabled {
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.ant-image-preview-switch-left,
+.ant-image-preview-switch-right {
+  color: rgba(255, 255, 255, 0.8) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+  border-radius: 50% !important;
+  transition: all 0.2s ease !important;
+}
+
+.ant-image-preview-switch-left:hover,
+.ant-image-preview-switch-right:hover {
+  color: #fff !important;
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.ant-image-preview-progress {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 12px !important;
+}
+
+[data-theme='dark'] .ant-image-mask {
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+
+[data-theme='dark'] .ant-image-preview-operations {
+  background: rgba(30, 30, 30, 0.7) !important;
+}

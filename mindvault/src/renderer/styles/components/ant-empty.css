@@ -1,0 +1,24 @@
+.ant-empty {
+  color: var(--text-secondary) !important;
+}
+
+.ant-empty .ant-empty-description {
+  color: var(--text-secondary) !important;
+  font-size: 14px !important;
+}
+
+.ant-empty .ant-empty-image {
+  height: auto !important;
+}
+
+.ant-empty .ant-empty-footer {
+  margin-top: 16px !important;
+}
+
+[data-theme='dark'] .ant-empty {
+  color: var(--text-secondary) !important;
+}
+
+[data-theme='dark'] .ant-empty .ant-empty-description {
+  color: var(--text-secondary) !important;
+}

@@ -1,0 +1,70 @@
+# Dependencies
+node_modules/
+npm-cache/
+.pnp/
+.pnp.js
+
+# Build outputs
+dist/
+out/
+build/
+release*/
+*.exe
+*.dmg
+*.zip
+*.asar
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Logs
+logs/
+*.log
+debug.log
+_dbg*.txt
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+.dev-data/
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Archives
+*.zip
+*.tar.gz
+
+# Temporary
+*.tmp
+.cache/
+
+# Large media/resources (host separately)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp3
+*.wav
+*.mp4
+*.avi
+*.ttf
+*.otf
+*.woff
+*.woff2
+
+# Cursors and fonts
+cursors/
+cursors-frames/
+fonts/
+
+# Release artifacts
+win-unpacked/

@@ -1,0 +1,20 @@
+.ant-switch {
+  background-color: var(--bg-tertiary) !important;
+}
+
+.ant-switch-checked {
+  background-color: var(--primary-color) !important;
+}
+
+.ant-switch-handle::before {
+  background-color: #fff !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+}
+
+[data-theme='dark'] .ant-switch {
+  background-color: var(--bg-tertiary) !important;
+}
+
+[data-theme='dark'] .ant-switch-checked {
+  background-color: var(--primary-color) !important;
+}

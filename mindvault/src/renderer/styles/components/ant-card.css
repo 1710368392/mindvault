@@ -1,0 +1,178 @@
+/* ===== Ant Design 风格卡片组件 ===== */
+
+.ant-card {
+  background-color: var(--bg-primary);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03), 0 1px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px 0 rgba(0, 0, 0, 0.02);
+}
+
+.ant-card-hoverable {
+  cursor: pointer;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.ant-card-hoverable:hover {
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12);
+  border-color: transparent;
+}
+
+.ant-card-head {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 16px;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ant-card-head-title {
+  display: inline-block;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: var(--font-title);
+}
+
+.ant-card-head-extra {
+  color: var(--text-primary);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.ant-card-body {
+  padding: 24px;
+}
+
+/* 可滚动 Card：隐藏滚动条，保留滚轮滚动功能 */
+.home-card-scrollable .ant-card-body::-webkit-scrollbar {
+  display: none;
+}
+
+.home-card-scrollable .ant-card-body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.ant-card-actions {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: transparent;
+  border-top: 1px solid var(--border-color);
+}
+
+.ant-card-actions > li {
+  margin: 0;
+  padding: 12px 0;
+  color: var(--text-secondary);
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.ant-card-actions > li:not(:last-child) {
+  border-right: 1px solid var(--border-color);
+}
+
+.ant-card-actions > li:hover {
+  color: var(--primary-color);
+}
+
+/* Card Sizes */
+.ant-card-small .ant-card-head {
+  padding: 0 12px;
+  font-size: 14px;
+  min-height: 36px;
+}
+
+.ant-card-small .ant-card-body {
+  padding: 12px;
+}
+
+/* Card Grid */
+.ant-card-grid {
+  float: left;
+  width: 33.33%;
+  padding: 24px;
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.ant-card-grid:hover {
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+  z-index: 1;
+}
+
+/* Card Meta */
+.ant-card-meta {
+  margin: -4px 0;
+  display: flex;
+}
+
+.ant-card-meta-avatar {
+  padding-right: 16px;
+}
+
+.ant-card-meta-detail {
+  flex: 1;
+  overflow: hidden;
+}
+
+.ant-card-meta-title {
+  margin-bottom: 4px;
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ant-card-meta-description {
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.5714285714285714;
+}
+
+/* Card Cover */
+.ant-card-cover {
+  margin-top: -16px;
+  margin-right: -16px;
+  margin-left: -16px;
+}
+
+.ant-card-cover > * {
+  display: block;
+  width: 100%;
+}
+
+.ant-card-cover img {
+  border-radius: 8px 8px 0 0;
+}
+
+/* Card Type Inner */
+.ant-card-type-inner .ant-card-head {
+  background-color: var(--bg-tertiary);
+  padding: 0 24px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.ant-card-type-inner .ant-card-body {
+  padding: 24px;
+}
+
+/* Loading Card */
+.ant-card-loading {
+  overflow: hidden;
+}
+
+.ant-card-loading .ant-card-body {
+  user-select: none;
+}

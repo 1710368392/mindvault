@@ -1,0 +1,71 @@
+.ant-drawer-content {
+  background-color: var(--bg-secondary) !important;
+}
+
+.ant-drawer-header {
+  background-color: var(--bg-secondary) !important;
+  border-bottom: 1px solid var(--border-light) !important;
+  padding: 16px 24px !important;
+}
+
+.ant-drawer-title {
+  color: var(--text-primary) !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+}
+
+.ant-drawer-close {
+  color: var(--text-secondary) !important;
+}
+
+.ant-drawer-close:hover {
+  color: var(--text-primary) !important;
+  background-color: var(--bg-hover) !important;
+}
+
+.ant-drawer-body {
+  color: var(--text-secondary) !important;
+  padding: 16px 24px !important;
+}
+
+.ant-drawer-footer {
+  border-top: 1px solid var(--border-light) !important;
+  padding: 12px 24px !important;
+}
+
+.ant-drawer-mask {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.ant-drawer .ant-drawer-content {
+  border-radius: 0 !important;
+  border: none !important;
+}
+
+.ant-drawer-left .ant-drawer-content {
+  border-right: 1px solid var(--border-color) !important;
+}
+
+.ant-drawer-right .ant-drawer-content {
+  border-left: 1px solid var(--border-color) !important;
+}
+
+.ant-drawer-top .ant-drawer-content {
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.ant-drawer-bottom .ant-drawer-content {
+  border-top: 1px solid var(--border-color) !important;
+}
+
+[data-theme='dark'] .ant-drawer-content {
+  box-shadow: -6px 0 16px rgba(0, 0, 0, 0.3) !important;
+}
+
+[data-theme='dark'] .ant-drawer-right .ant-drawer-content {
+  box-shadow: 6px 0 16px rgba(0, 0, 0, 0.3) !important;
+}
+
+[data-theme='dark'] .ant-drawer-mask {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}

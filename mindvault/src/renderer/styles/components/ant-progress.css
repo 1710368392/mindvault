@@ -1,0 +1,55 @@
+.ant-progress-bg {
+  background: linear-gradient(90deg, var(--primary-color), var(--primary-light)) !important;
+}
+
+.ant-progress-inner {
+  background-color: var(--bg-tertiary) !important;
+}
+
+.ant-progress-text {
+  color: var(--text-secondary) !important;
+}
+
+.ant-progress-status-success .ant-progress-bg {
+  background: var(--success-color) !important;
+}
+
+.ant-progress-status-exception .ant-progress-bg {
+  background: var(--error-color) !important;
+}
+
+.ant-progress-circle .ant-progress-circle-trail {
+  stroke: var(--bg-tertiary) !important;
+}
+
+.ant-progress-circle .ant-progress-circle-path {
+  stroke: var(--primary-color) !important;
+}
+
+.ant-progress-status-success .ant-progress-circle-path {
+  stroke: var(--success-color) !important;
+}
+
+.ant-progress-status-exception .ant-progress-circle-path {
+  stroke: var(--error-color) !important;
+}
+
+.ant-progress-steps-item {
+  background-color: var(--bg-tertiary) !important;
+}
+
+.ant-progress-steps-item-active {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-light)) !important;
+}
+
+[data-theme='dark'] .ant-progress-inner {
+  background-color: var(--bg-tertiary) !important;
+}
+
+[data-theme='dark'] .ant-progress-circle .ant-progress-circle-trail {
+  stroke: var(--bg-tertiary) !important;
+}
+
+[data-theme='dark'] .ant-progress-steps-item {
+  background-color: var(--bg-tertiary) !important;
+}

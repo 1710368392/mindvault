@@ -1,0 +1,356 @@
+/* ===== 经典白主题变量 ===== */
+[data-theme="light"],
+:root {
+  --primary-color: #6C63FF;
+  --primary-hover: #5A52E0;
+  --primary-light: #8B85FF;
+  --primary-bg: rgba(108, 99, 255, 0.08);
+
+  --bg-primary: #f8f9fa;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f0f1f3;
+  --bg-hover: rgba(0, 0, 0, 0.04);
+  --bg-active: rgba(108, 99, 255, 0.08);
+
+  --text-primary: #1a1a2e;
+  --text-secondary: #6b7280;
+  --text-tertiary: #9ca3af;
+  --text-inverse: #ffffff;
+
+  --border-color: #e5e7eb;
+  --border-light: #f3f4f6;
+  --border-focus: #6C63FF;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+
+  --sidebar-bg: #ffffff;
+  --sidebar-border: #e5e7eb;
+  --header-bg: rgba(255, 255, 255, 0.85);
+
+  --success-color: #10B981;
+  --success-light: #34D399;
+  --warning-color: #F59E0B;
+  --warning-light: #FBBF24;
+  --error-color: #EF4444;
+  --info-color: #3B82F6;
+
+  --card-bg: #ffffff;
+  --card-hover-bg: #fafafa;
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --card-hover-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* 莫兰迪暖调主题 */
+[data-theme="morandi-warm"] {
+  --primary-color: #C4A882;
+  --primary-hover: #B8956A;
+  --primary-light: #D4B896;
+  --primary-bg: rgba(196, 168, 130, 0.12);
+
+  --bg-primary: #F5EDE4;
+  --bg-secondary: #FAF7F3;
+  --bg-tertiary: #EDE3D8;
+  --bg-hover: rgba(196, 168, 130, 0.08);
+  --bg-active: rgba(196, 168, 130, 0.15);
+
+  --text-primary: #5D4E37;
+  --text-secondary: #8B7D6B;
+  --text-tertiary: #A89B8A;
+  --text-inverse: #FFFFFF;
+
+  --border-color: #D9CFC4;
+  --border-light: #E8E0D6;
+  --border-focus: #C4A882;
+
+  --shadow-sm: 0 1px 2px rgba(93, 78, 55, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(93, 78, 55, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(93, 78, 55, 0.08);
+  --shadow-xl: 0 20px 25px -5px rgba(93, 78, 55, 0.08);
+
+  --sidebar-bg: #FAF7F3;
+  --sidebar-border: #D9CFC4;
+  --header-bg: rgba(250, 247, 243, 0.85);
+
+  --success-color: #A8B89C;
+  --success-light: #C8D4BC;
+  --warning-color: #D4B896;
+  --warning-light: #E8D4B0;
+  --error-color: #C49B8B;
+  --info-color: #A8B0C4;
+
+  --card-bg: #FAF7F3;
+  --card-hover-bg: #F5EDE4;
+  --card-shadow: 0 2px 8px rgba(93, 78, 55, 0.06);
+  --card-hover-shadow: 0 8px 24px rgba(93, 78, 55, 0.1);
+}
+
+/* 莫兰迪冷调主题 */
+[data-theme="morandi-cool"] {
+  --primary-color: #8FA4B2;
+  --primary-hover: #6E8A9A;
+  --primary-light: #A3B5C1;
+  --primary-bg: rgba(143, 164, 178, 0.12);
+
+  --bg-primary: #E8EEF2;
+  --bg-secondary: #F2F6F9;
+  --bg-tertiary: #DEE6EB;
+  --bg-hover: rgba(143, 164, 178, 0.08);
+  --bg-active: rgba(143, 164, 178, 0.15);
+
+  --text-primary: #3D5A6E;
+  --text-secondary: #6B8494;
+  --text-tertiary: #8FA4B2;
+  --text-inverse: #FFFFFF;
+
+  --border-color: #C8D4DB;
+  --border-light: #DAE3E9;
+  --border-focus: #8FA4B2;
+
+  --shadow-sm: 0 1px 2px rgba(61, 90, 110, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(61, 90, 110, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(61, 90, 110, 0.08);
+  --shadow-xl: 0 20px 25px -5px rgba(61, 90, 110, 0.08);
+
+  --sidebar-bg: #F2F6F9;
+  --sidebar-border: #C8D4DB;
+  --header-bg: rgba(242, 246, 249, 0.85);
+
+  --success-color: #8FB2A4;
+  --success-light: #B0C8BC;
+  --warning-color: #B2A48F;
+  --warning-light: #C8B8A0;
+  --error-color: #B28F9A;
+  --info-color: #8FA4B2;
+
+  --card-bg: #F2F6F9;
+  --card-hover-bg: #E8EEF2;
+  --card-shadow: 0 2px 8px rgba(61, 90, 110, 0.06);
+  --card-hover-shadow: 0 8px 24px rgba(61, 90, 110, 0.1);
+}
+
+/* 莫兰迪自然主题 */
+[data-theme="morandi-nature"] {
+  --primary-color: #8FA882;
+  --primary-hover: #6E8A5A;
+  --primary-light: #A3B896;
+  --primary-bg: rgba(143, 168, 130, 0.12);
+
+  --bg-primary: #EDF2E8;
+  --bg-secondary: #F5F8F2;
+  --bg-tertiary: #E3EBDE;
+  --bg-hover: rgba(143, 168, 130, 0.08);
+  --bg-active: rgba(143, 168, 130, 0.15);
+
+  --text-primary: #4A5D3D;
+  --text-secondary: #6B8460;
+  --text-tertiary: #8FA882;
+  --text-inverse: #FFFFFF;
+
+  --border-color: #C8D4C2;
+  --border-light: #DAE3D6;
+  --border-focus: #8FA882;
+
+  --shadow-sm: 0 1px 2px rgba(74, 93, 61, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(74, 93, 61, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(74, 93, 61, 0.08);
+  --shadow-xl: 0 20px 25px -5px rgba(74, 93, 61, 0.08);
+
+  --sidebar-bg: #F5F8F2;
+  --sidebar-border: #C8D4C2;
+  --header-bg: rgba(245, 248, 242, 0.85);
+
+  --success-color: #8FB89C;
+  --success-light: #B0C8A8;
+  --warning-color: #B2A88F;
+  --warning-light: #C8BC9E;
+  --error-color: #B28F8F;
+  --info-color: #8FA4B2;
+
+  --card-bg: #F5F8F2;
+  --card-hover-bg: #EDF2E8;
+  --card-shadow: 0 2px 8px rgba(74, 93, 61, 0.06);
+  --card-hover-shadow: 0 8px 24px rgba(74, 93, 61, 0.1);
+}
+
+/* ===== 渐变主题：海洋蓝 (ID-0042) ===== */
+/* 渐变：#00a5d8 → #73ffee → #ffffeb */
+[data-theme="ocean-blue"] {
+  --primary-color: #00a5d8;
+  --primary-hover: #0088b8;
+  --primary-light: #4dd8f0;
+  --primary-bg: rgba(0, 165, 216, 0.12);
+
+  --bg-primary: linear-gradient(180deg, #e8f8fc 0%, #f0fdfd 50%, #fffff5 100%);
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #d4f4f8;
+  --bg-hover: rgba(0, 165, 216, 0.08);
+  --bg-active: rgba(0, 165, 216, 0.15);
+
+  --text-primary: #0a4a5c;
+  --text-secondary: #2a7a8c;
+  --text-tertiary: #5aaab8;
+  --text-inverse: #ffffff;
+
+  --border-color: #a8e8f0;
+  --border-light: #d4f4f8;
+  --border-focus: #00a5d8;
+
+  --shadow-sm: 0 1px 2px rgba(0, 165, 216, 0.08);
+  --shadow-md: 0 4px 6px -1px rgba(0, 165, 216, 0.1), 0 2px 4px -2px rgba(0, 165, 216, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 165, 216, 0.12), 0 4px 6px -4px rgba(0, 165, 216, 0.08);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 165, 216, 0.12), 0 8px 10px -6px rgba(0, 165, 216, 0.08);
+
+  --sidebar-bg: #f0fdfd;
+  --sidebar-border: #a8e8f0;
+  --header-bg: rgba(240, 253, 253, 0.9);
+
+  --success-color: #10B981;
+  --success-light: #34D399;
+  --warning-color: #F59E0B;
+  --warning-light: #FBBF24;
+  --error-color: #EF4444;
+  --info-color: #00a5d8;
+
+  --card-bg: #ffffff;
+  --card-hover-bg: #f0fdfd;
+  --card-shadow: 0 2px 8px rgba(0, 165, 216, 0.08);
+  --card-hover-shadow: 0 8px 24px rgba(0, 165, 216, 0.15);
+}
+
+/* ===== 渐变主题：柠檬紫 (ID-0030) ===== */
+/* 渐变：rgb(253,255,220) → rgb(215,215,255) */
+[data-theme="lemon-lavender"] {
+  --primary-color: #7a7aff;
+  --primary-hover: #5a5ae0;
+  --primary-light: #9a9aff;
+  --primary-bg: rgba(122, 122, 255, 0.12);
+
+  --bg-primary: linear-gradient(180deg, #fdffdc 0%, #f5f5ff 100%);
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #e8e8ff;
+  --bg-hover: rgba(122, 122, 255, 0.08);
+  --bg-active: rgba(122, 122, 255, 0.15);
+
+  --text-primary: #3a3a6c;
+  --text-secondary: #5a5a8c;
+  --text-tertiary: #8a8aac;
+  --text-inverse: #ffffff;
+
+  --border-color: #d0d0f0;
+  --border-light: #e8e8ff;
+  --border-focus: #7a7aff;
+
+  --shadow-sm: 0 1px 2px rgba(122, 122, 200, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(122, 122, 200, 0.08), 0 2px 4px -2px rgba(122, 122, 200, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(122, 122, 200, 0.1), 0 4px 6px -4px rgba(122, 122, 200, 0.06);
+  --shadow-xl: 0 20px 25px -5px rgba(122, 122, 200, 0.1), 0 8px 10px -6px rgba(122, 122, 200, 0.06);
+
+  --sidebar-bg: #f8f8ff;
+  --sidebar-border: #d0d0f0;
+  --header-bg: rgba(248, 248, 255, 0.9);
+
+  --success-color: #a8d8a8;
+  --success-light: #c8e8c8;
+  --warning-color: #e8d8a8;
+  --warning-light: #f0e8c0;
+  --error-color: #e8a8a8;
+  --info-color: #7a7aff;
+
+  --card-bg: #ffffff;
+  --card-hover-bg: #f8f8ff;
+  --card-shadow: 0 2px 8px rgba(122, 122, 200, 0.06);
+  --card-hover-shadow: 0 8px 24px rgba(122, 122, 200, 0.12);
+}
+
+/* ===== 渐变主题：青柠绿 (ID-0039) ===== */
+/* 渐变：#e3ffb8 → #c0f251 → #0ed6e0 */
+[data-theme="lime-fresh"] {
+  --primary-color: #0ed6e0;
+  --primary-hover: #0ab8c0;
+  --primary-light: #4de8f0;
+  --primary-bg: rgba(14, 214, 224, 0.12);
+
+  --bg-primary: linear-gradient(180deg, #f0ffe0 0%, #e8f8d0 50%, #e0f8f8 100%);
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #d8f8c8;
+  --bg-hover: rgba(192, 242, 81, 0.12);
+  --bg-active: rgba(14, 214, 224, 0.15);
+
+  --text-primary: #2a5c20;
+  --text-secondary: #4a7c40;
+  --text-tertiary: #6a9c60;
+  --text-inverse: #ffffff;
+
+  --border-color: #c0f0a8;
+  --border-light: #e0f8d0;
+  --border-focus: #0ed6e0;
+
+  --shadow-sm: 0 1px 2px rgba(14, 214, 224, 0.08);
+  --shadow-md: 0 4px 6px -1px rgba(14, 214, 224, 0.1), 0 2px 4px -2px rgba(14, 214, 224, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(14, 214, 224, 0.12), 0 4px 6px -4px rgba(14, 214, 224, 0.08);
+  --shadow-xl: 0 20px 25px -5px rgba(14, 214, 224, 0.12), 0 8px 10px -6px rgba(14, 214, 224, 0.08);
+
+  --sidebar-bg: #f5fff0;
+  --sidebar-border: #c0f0a8;
+  --header-bg: rgba(245, 255, 240, 0.9);
+
+  --success-color: #10B981;
+  --success-light: #34D399;
+  --warning-color: #F59E0B;
+  --warning-light: #FBBF24;
+  --error-color: #EF4444;
+  --info-color: #0ed6e0;
+
+  --card-bg: #ffffff;
+  --card-hover-bg: #f5fff0;
+  --card-shadow: 0 2px 8px rgba(14, 214, 224, 0.08);
+  --card-hover-shadow: 0 8px 24px rgba(14, 214, 224, 0.15);
+}
+
+/* ===== 渐变主题：蜜桃粉 (ID-0029) ===== */
+/* 渐变：rgb(255,217,210) → rgb(210,255,251) */
+[data-theme="peach-blossom"] {
+  --primary-color: #ff8a80;
+  --primary-hover: #e07068;
+  --primary-light: #ffb0a8;
+  --primary-bg: rgba(255, 138, 128, 0.12);
+
+  --bg-primary: linear-gradient(180deg, #fff0e8 0%, #fff8f5 50%, #e8ffff 100%);
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #ffe8e0;
+  --bg-hover: rgba(255, 138, 128, 0.08);
+  --bg-active: rgba(128, 232, 224, 0.15);
+
+  --text-primary: #6c3a34;
+  --text-secondary: #8c5a54;
+  --text-tertiary: #ac7a74;
+  --text-inverse: #ffffff;
+
+  --border-color: #f0d0c8;
+  --border-light: #f8e8e0;
+  --border-focus: #ff8a80;
+
+  --shadow-sm: 0 1px 2px rgba(255, 138, 128, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(255, 138, 128, 0.08), 0 2px 4px -2px rgba(255, 138, 128, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(255, 138, 128, 0.1), 0 4px 6px -4px rgba(255, 138, 128, 0.06);
+  --shadow-xl: 0 20px 25px -5px rgba(255, 138, 128, 0.1), 0 8px 10px -6px rgba(255, 138, 128, 0.06);
+
+  --sidebar-bg: #fff8f5;
+  --sidebar-border: #f0d0c8;
+  --header-bg: rgba(255, 248, 245, 0.9);
+
+  --success-color: #80e8a0;
+  --success-light: #a0f0c0;
+  --warning-color: #f0c880;
+  --warning-light: #f8e0a0;
+  --error-color: #e88080;
+  --info-color: #80e8e0;
+
+  --card-bg: #ffffff;
+  --card-hover-bg: #fff8f5;
+  --card-shadow: 0 2px 8px rgba(255, 138, 128, 0.06);
+  --card-hover-shadow: 0 8px 24px rgba(255, 138, 128, 0.12);
+}

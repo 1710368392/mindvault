@@ -1,0 +1,98 @@
+.ant-carousel .slick-slide > div {
+  display: flex;
+  justify-content: center;
+}
+
+/* 让灵感闪回 Carousel 的 slick 内部容器自适应内容宽度 */
+/* 关键：解除所有 slick 内部容器的宽度限制 */
+.ant-carousel.flashback-carousel,
+.ant-carousel.flashback-carousel .slick-slider,
+.ant-carousel.flashback-carousel .slick-list,
+.ant-carousel.flashback-carousel .slick-track {
+  width: auto !important;
+  min-width: 0 !important;
+}
+
+/* 让 slick-list 跟随内容宽度，而不是撑满父容器 */
+.ant-carousel.flashback-carousel .slick-list {
+  overflow: visible !important;
+}
+
+/* track 用 flex 布局并居中 */
+.ant-carousel.flashback-carousel .slick-track {
+  display: flex !important;
+  justify-content: center;
+  width: auto !important;
+}
+
+/* 每个 slide 自适应内容宽度 */
+.ant-carousel.flashback-carousel .slick-slide {
+  width: auto !important;
+  min-width: 0 !important;
+  float: none !important;
+  position: relative !important;
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+  flex-shrink: 0;
+}
+
+/* 非 active slide 隐藏 */
+.ant-carousel.flashback-carousel .slick-slide:not(.slick-active) {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.ant-carousel.flashback-carousel .slick-slide.slick-active {
+  opacity: 1;
+}
+
+.ant-carousel .slick-dots li button {
+  background: var(--border-light) !important;
+  opacity: 0.6 !important;
+  border-radius: 4px !important;
+  height: 4px !important;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  background: var(--primary-color) !important;
+  opacity: 1 !important;
+}
+
+.ant-carousel .slick-dots {
+  bottom: 8px !important;
+}
+
+.ant-carousel .slick-dots li {
+  margin: 0 3px !important;
+}
+
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next {
+  color: var(--text-secondary) !important;
+  background: var(--bg-secondary) !important;
+  border-radius: 50% !important;
+  opacity: 0.6 !important;
+  transition: opacity 0.2s ease !important;
+  z-index: 2 !important;
+}
+
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover {
+  opacity: 1 !important;
+  color: var(--text-primary) !important;
+}
+
+.ant-carousel .slick-prev::before,
+.ant-carousel .slick-next::before {
+  color: inherit !important;
+}
+
+[data-theme='dark'] .ant-carousel .slick-dots li button {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+[data-theme='dark'] .ant-carousel .slick-prev,
+[data-theme='dark'] .ant-carousel .slick-next {
+  background: rgba(255, 255, 255, 0.1) !important;
+}

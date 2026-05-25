@@ -1,0 +1,73 @@
+.ant-notification-notice {
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: var(--shadow-raised) !important;
+}
+
+.ant-notification-notice-message {
+  color: var(--text-primary) !important;
+  font-family: var(--font-title) !important;
+}
+
+.ant-notification-notice-description {
+  color: var(--text-secondary) !important;
+}
+
+.ant-notification-notice-close {
+  color: var(--text-tertiary) !important;
+}
+
+.ant-notification-notice-close:hover {
+  color: var(--text-primary) !important;
+}
+
+.ant-notification-notice-icon-success {
+  color: var(--success-color) !important;
+}
+
+.ant-notification-notice-icon-error {
+  color: var(--error-color) !important;
+}
+
+.ant-notification-notice-icon-warning {
+  color: var(--warning-color) !important;
+}
+
+.ant-notification-notice-icon-info {
+  color: var(--info-color) !important;
+}
+
+.ant-notification-notice-btns .ant-btn-primary {
+  background: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.ant-notification-notice-btns .ant-btn-default {
+  background: var(--bg-tertiary) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-secondary) !important;
+}
+
+[data-theme='dark'] .ant-notification-notice {
+  background: var(--bg-secondary) !important;
+  border-color: var(--border-color) !important;
+}
+
+[data-theme='dark'] .ant-notification-notice-message {
+  color: var(--text-primary) !important;
+}
+
+[data-theme='dark'] .ant-notification-notice-description {
+  color: var(--text-secondary) !important;
+}
+
+[data-theme='dark'] .ant-notification-notice-close {
+  color: var(--text-tertiary) !important;
+}
+
+[data-theme='dark'] .ant-notification-notice-btns .ant-btn-default {
+  background: var(--bg-tertiary) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-secondary) !important;
+}

@@ -1,0 +1,16 @@
+.ant-splitter-bar .ant-splitter-bar-dragger {
+  opacity: 0 !important;
+  transition: opacity 0.2s !important;
+}
+
+.ant-splitter-bar:hover .ant-splitter-bar-dragger,
+.ant-splitter-bar-active .ant-splitter-bar-dragger,
+.ant-splitter-bar-dragger:hover {
+  opacity: 0 !important;
+  background: var(--primary-color) !important;
+}
+
+.ant-splitter-bar:hover,
+.ant-splitter-bar-active {
+  background: rgba(108, 99, 255, 0.15) !important;
+}

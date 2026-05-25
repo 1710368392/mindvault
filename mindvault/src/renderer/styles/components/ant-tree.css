@@ -1,0 +1,82 @@
+.ant-tree {
+  background-color: transparent !important;
+}
+
+.ant-tree .ant-tree-treenode {
+  padding: 0 4px !important;
+}
+
+.ant-tree .ant-tree-node-content-wrapper {
+  color: var(--text-primary) !important;
+  border-radius: 6px !important;
+  padding: 2px 4px !important;
+  min-height: 32px !important;
+  line-height: 32px !important;
+}
+
+.ant-tree .ant-tree-node-content-wrapper:hover {
+  background-color: var(--bg-hover) !important;
+}
+
+.ant-tree .ant-tree-treenode-selected .ant-tree-node-content-wrapper {
+  background-color: var(--bg-active) !important;
+  color: var(--text-primary) !important;
+}
+
+.ant-tree .ant-tree-switcher {
+  color: var(--text-tertiary) !important;
+  width: 20px !important;
+}
+
+.ant-tree .ant-tree-switcher:hover {
+  color: var(--text-secondary) !important;
+}
+
+.ant-tree .ant-tree-title {
+  color: var(--text-primary) !important;
+}
+
+.ant-tree .ant-tree-treenode-draggable .ant-tree-draggable-icon {
+  color: var(--text-tertiary) !important;
+}
+
+.ant-tree .ant-tree-drop-indicator {
+  background-color: var(--primary-color) !important;
+}
+
+.ant-tree .ant-tree-treenode-dragging {
+  background-color: var(--bg-hover) !important;
+  opacity: 0.6 !important;
+}
+
+.ant-tree.ant-tree-block-node .ant-tree-node-content-wrapper {
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+.ant-tree .ant-tree-treenode-disabled .ant-tree-node-content-wrapper {
+  color: var(--text-tertiary) !important;
+  cursor: default !important;
+}
+
+.ant-tree .ant-tree-treenode-disabled .ant-tree-node-content-wrapper:hover {
+  background-color: transparent !important;
+}
+
+.ant-tree.ant-tree-sm .ant-tree-node-content-wrapper {
+  min-height: 24px !important;
+  line-height: 24px !important;
+  padding: 1px 4px !important;
+}
+
+.ant-tree.ant-tree-sm .ant-tree-treenode {
+  padding: 0 2px !important;
+}
+
+[data-theme='dark'] .ant-tree .ant-tree-node-content-wrapper:hover {
+  background-color: var(--bg-hover) !important;
+}
+
+[data-theme='dark'] .ant-tree .ant-tree-treenode-selected .ant-tree-node-content-wrapper {
+  background-color: var(--bg-active) !important;
+}

@@ -1,0 +1,94 @@
+/* ===== Ant Design ColorPicker 组件主题适配 ===== */
+
+.ant-color-picker-trigger {
+  border-radius: var(--radius-sm) !important;
+  border: 1px solid var(--border-color) !important;
+  background-color: var(--bg-secondary) !important;
+  transition: border-color 0.2s !important;
+}
+
+.ant-color-picker-trigger:hover {
+  border-color: var(--primary-color) !important;
+}
+
+.ant-color-picker-color-block {
+  border-radius: 4px !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.ant-color-picker-panel {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--radius-md) !important;
+  box-shadow: var(--shadow-lg) !important;
+}
+
+.ant-color-picker-panel .ant-color-picker-presets {
+  color: var(--text-primary) !important;
+}
+
+.ant-color-picker-panel .ant-color-picker-presets-label {
+  color: var(--text-secondary) !important;
+  font-size: 12px !important;
+}
+
+.ant-color-picker-panel .ant-color-picker-presets-color {
+  border-radius: 4px !important;
+  border: 1px solid var(--border-color) !important;
+  transition: transform 0.15s, box-shadow 0.15s !important;
+}
+
+.ant-color-picker-panel .ant-color-picker-presets-color:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
+}
+
+.ant-color-picker-input .ant-input {
+  background-color: var(--bg-tertiary) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-primary) !important;
+  font-family: 'Consolas', 'Monaco', monospace !important;
+  font-size: 12px !important;
+}
+
+.ant-color-picker-input .ant-input:focus {
+  border-color: var(--primary-color) !important;
+}
+
+.ant-color-picker-format-select .ant-select-selector {
+  background-color: var(--bg-tertiary) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+.ant-color-picker-swatch {
+  border-radius: 4px !important;
+}
+
+/* ===== Dark Theme ===== */
+[data-theme='dark'] .ant-color-picker-trigger {
+  background-color: var(--bg-secondary) !important;
+  border-color: var(--border-color) !important;
+}
+
+[data-theme='dark'] .ant-color-picker-trigger:hover {
+  border-color: var(--primary-color) !important;
+}
+
+[data-theme='dark'] .ant-color-picker-panel {
+  background-color: var(--bg-secondary) !important;
+  border-color: var(--border-color) !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4) !important;
+}
+
+[data-theme='dark'] .ant-color-picker-input .ant-input {
+  background-color: var(--bg-tertiary) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+[data-theme='dark'] .ant-color-picker-format-select .ant-select-selector {
+  background-color: var(--bg-tertiary) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-primary) !important;
+}

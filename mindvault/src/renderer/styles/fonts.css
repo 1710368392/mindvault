@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'MindVault-Title';
+  src: url('/fonts/title-ximaoti.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MindVault-Body';
+  src: url('/fonts/body-rounded-cn-bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MindVault-Special';
+  src: url('/fonts/special-xuanzongti.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MindVault-English';
+  src: url('/fonts/english-namskow-white.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MindVault-Extend-Songti';
+  src: url('/fonts/extend-houzun-songti.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MindVault-Extend-Kaiti';
+  src: url('/fonts/extend-hanchan-kaiti.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MindVault-Extend-Heiti';
+  src: url('/fonts/extend-wenquanyi-zenhei.ttc') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

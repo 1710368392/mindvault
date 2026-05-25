@@ -1,0 +1,32 @@
+.ant-statistic {
+  font-family: var(--font-family) !important;
+}
+
+.ant-statistic-title {
+  color: var(--text-tertiary) !important;
+  font-size: 10px !important;
+  margin-bottom: 1px !important;
+}
+
+.ant-statistic-content {
+  color: var(--text-primary) !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+}
+
+.ant-statistic-content-prefix {
+  margin-right: 3px !important;
+}
+
+.ant-statistic-content-suffix {
+  margin-left: 2px !important;
+  font-size: 12px !important;
+}
+
+[data-theme='dark'] .ant-statistic-title {
+  color: var(--text-tertiary) !important;
+}
+
+[data-theme='dark'] .ant-statistic-content {
+  color: var(--text-primary) !important;
+}

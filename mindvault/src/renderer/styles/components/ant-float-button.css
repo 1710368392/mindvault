@@ -1,0 +1,54 @@
+/* ===== Ant Design 风格浮动按钮组件 ===== */
+
+.ant-float-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ant-float-button-primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+  border: 1px solid var(--primary-color);
+  color: white;
+  box-shadow: 0 6px 20px rgba(108, 99, 255, 0.4);
+}
+
+.ant-float-button-primary:hover {
+  background: linear-gradient(135deg, var(--primary-hover), var(--primary-color));
+  box-shadow: 0 8px 24px rgba(108, 99, 255, 0.5);
+}
+
+.ant-float-button-default {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.ant-float-button-default:hover {
+  background: var(--bg-hover);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.16);
+}
+
+.ant-float-button-outline {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  box-shadow: none;
+}
+
+.ant-float-button-outline:hover {
+  background: var(--primary-bg);
+}
+
+/* 暗色主题适配 */
+[data-theme='dark'] .ant-float-button-default {
+  background: var(--bg-tertiary);
+}
+
+[data-theme='dark'] .ant-float-button-default:hover {
+  background: var(--bg-secondary);
+}

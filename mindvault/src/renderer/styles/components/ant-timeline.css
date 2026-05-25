@@ -1,0 +1,40 @@
+.ant-timeline-item-tail {
+  border-inline-start: 2px solid var(--border-light) !important;
+}
+
+.ant-timeline-item-head {
+  background-color: var(--primary-color) !important;
+}
+
+.ant-timeline-item-head-blue {
+  background-color: var(--primary-color) !important;
+}
+
+.ant-timeline-item-head-green {
+  background-color: var(--success-color) !important;
+}
+
+.ant-timeline-item-head-red {
+  background-color: var(--error-color) !important;
+}
+
+.ant-timeline-item-head-gray {
+  background-color: var(--text-tertiary) !important;
+}
+
+.ant-timeline-item-content {
+  color: var(--text-primary) !important;
+  min-height: auto !important;
+}
+
+.ant-timeline-item-pending .ant-timeline-item-head {
+  background-color: var(--primary-color) !important;
+}
+
+.ant-timeline {
+  font-size: 13px !important;
+}
+
+[data-theme='dark'] .ant-timeline-item-tail {
+  border-inline-start-color: var(--border-color) !important;
+}

@@ -1,0 +1,85 @@
+.ant-alert {
+  border-radius: var(--radius-md) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.ant-alert-message {
+  color: var(--text-primary) !important;
+  font-size: 13px !important;
+}
+
+.ant-alert-description {
+  color: var(--text-secondary) !important;
+}
+
+.ant-alert-close-icon {
+  color: var(--text-tertiary) !important;
+}
+
+.ant-alert-close-icon:hover {
+  color: var(--text-primary) !important;
+}
+
+.ant-alert-success {
+  background-color: rgba(16, 185, 129, 0.08) !important;
+  border-color: rgba(16, 185, 129, 0.2) !important;
+}
+
+.ant-alert-success .ant-alert-icon {
+  color: var(--success-color) !important;
+}
+
+.ant-alert-error {
+  background-color: rgba(239, 68, 68, 0.08) !important;
+  border-color: rgba(239, 68, 68, 0.2) !important;
+}
+
+.ant-alert-error .ant-alert-icon {
+  color: var(--error-color) !important;
+}
+
+.ant-alert-warning {
+  background-color: rgba(245, 158, 11, 0.08) !important;
+  border-color: rgba(245, 158, 11, 0.2) !important;
+}
+
+.ant-alert-warning .ant-alert-icon {
+  color: var(--warning-color) !important;
+}
+
+.ant-alert-info {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+  border-color: rgba(59, 130, 246, 0.2) !important;
+}
+
+.ant-alert-info .ant-alert-icon {
+  color: var(--info-color) !important;
+}
+
+[data-theme='dark'] .ant-alert-success {
+  background-color: rgba(52, 211, 153, 0.1) !important;
+  border-color: rgba(52, 211, 153, 0.2) !important;
+}
+
+[data-theme='dark'] .ant-alert-error {
+  background-color: rgba(248, 113, 113, 0.1) !important;
+  border-color: rgba(248, 113, 113, 0.2) !important;
+}
+
+[data-theme='dark'] .ant-alert-warning {
+  background-color: rgba(251, 191, 36, 0.1) !important;
+  border-color: rgba(251, 191, 36, 0.2) !important;
+}
+
+[data-theme='dark'] .ant-alert-info {
+  background-color: rgba(96, 165, 250, 0.1) !important;
+  border-color: rgba(96, 165, 250, 0.2) !important;
+}
+
+[data-theme='dark'] .ant-alert-message {
+  color: var(--text-primary) !important;
+}
+
+[data-theme='dark'] .ant-alert-description {
+  color: var(--text-secondary) !important;
+}

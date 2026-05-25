@@ -1,0 +1,121 @@
+/* ===== Ant Design Select 组件主题适配 ===== */
+
+.ant-select {
+  font-size: 14px;
+}
+
+.ant-select .ant-select-selector {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--radius-sm) !important;
+  color: var(--text-primary) !important;
+  transition: all 0.2s !important;
+  padding: 0 11px !important;
+  min-height: 32px !important;
+}
+
+.ant-select:hover .ant-select-selector {
+  border-color: var(--primary-color) !important;
+}
+
+.ant-select-focused .ant-select-selector {
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.1) !important;
+}
+
+.ant-select-selection-item {
+  color: var(--text-primary) !important;
+  line-height: 30px !important;
+}
+
+.ant-select-selection-placeholder {
+  color: var(--text-tertiary) !important;
+  line-height: 30px !important;
+}
+
+.ant-select-arrow {
+  color: var(--text-tertiary) !important;
+}
+
+.ant-select-clear {
+  color: var(--text-tertiary) !important;
+  background: var(--bg-secondary) !important;
+}
+
+/* Dropdown */
+.ant-select-dropdown {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--radius-md) !important;
+  box-shadow: var(--shadow-lg) !important;
+  padding: 4px !important;
+}
+
+.ant-select-item {
+  color: var(--text-primary) !important;
+  border-radius: var(--radius-sm) !important;
+  padding: 5px 12px !important;
+  transition: all 0.15s !important;
+}
+
+.ant-select-item-option:hover,
+.ant-select-item-option-active {
+  background-color: var(--bg-hover) !important;
+}
+
+.ant-select-item-option-selected {
+  background-color: var(--primary-bg) !important;
+  color: var(--primary-color) !important;
+  font-weight: 500 !important;
+}
+
+.ant-select-item-option-state {
+  color: var(--primary-color) !important;
+}
+
+/* Disabled */
+.ant-select-disabled .ant-select-selector {
+  color: var(--text-tertiary) !important;
+  background-color: var(--bg-tertiary) !important;
+  cursor: not-allowed !important;
+}
+
+.ant-select-disabled:hover .ant-select-selector {
+  border-color: var(--border-color) !important;
+}
+
+/* ===== Dark Theme ===== */
+[data-theme='dark'] .ant-select .ant-select-selector {
+  background-color: var(--bg-secondary) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+[data-theme='dark'] .ant-select:hover .ant-select-selector {
+  border-color: var(--primary-color) !important;
+}
+
+[data-theme='dark'] .ant-select-focused .ant-select-selector {
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.2) !important;
+}
+
+[data-theme='dark'] .ant-select-dropdown {
+  background-color: var(--bg-secondary) !important;
+  border-color: var(--border-color) !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3) !important;
+}
+
+[data-theme='dark'] .ant-select-item {
+  color: var(--text-primary) !important;
+}
+
+[data-theme='dark'] .ant-select-item-option:hover,
+[data-theme='dark'] .ant-select-item-option-active {
+  background-color: var(--bg-hover) !important;
+}
+
+[data-theme='dark'] .ant-select-item-option-selected {
+  background-color: var(--primary-bg) !important;
+  color: var(--primary-color) !important;
+}

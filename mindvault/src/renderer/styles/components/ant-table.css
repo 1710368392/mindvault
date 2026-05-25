@@ -1,0 +1,114 @@
+.ant-table {
+  background-color: transparent !important;
+}
+
+.ant-table-thead > tr > th {
+  background-color: var(--bg-tertiary) !important;
+  color: var(--text-secondary) !important;
+  border-bottom: 1px solid var(--border-light) !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+}
+
+.ant-table-thead > tr > th::before {
+  background-color: transparent !important;
+}
+
+.ant-table-tbody > tr > td {
+  border-bottom: 1px solid var(--border-light) !important;
+  color: var(--text-primary) !important;
+  font-size: 13px !important;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background-color: var(--bg-hover) !important;
+}
+
+.ant-table-tbody > tr.ant-table-row-selected > td {
+  background-color: var(--bg-active) !important;
+}
+
+.ant-table-tbody > tr.ant-table-row-selected:hover > td {
+  background-color: var(--bg-hover) !important;
+}
+
+.ant-table-placeholder .ant-table-cell {
+  color: var(--text-tertiary) !important;
+}
+
+.ant-table-filter-dropdown {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+}
+
+.ant-table-filter-dropdown .ant-checkbox-wrapper {
+  color: var(--text-primary) !important;
+}
+
+.ant-table-filter-dropdown-btns {
+  border-top: 1px solid var(--border-light) !important;
+}
+
+.ant-table-filter-dropdown .ant-btn {
+  color: var(--text-secondary) !important;
+}
+
+.ant-table-filter-dropdown .ant-btn-primary {
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+}
+
+.ant-table-pagination.ant-pagination {
+  margin: 12px 0 !important;
+}
+
+.ant-pagination .ant-pagination-item {
+  border-color: var(--border-light) !important;
+  background-color: transparent !important;
+}
+
+.ant-pagination .ant-pagination-item a {
+  color: var(--text-secondary) !important;
+}
+
+.ant-pagination .ant-pagination-item-active {
+  border-color: var(--primary-color) !important;
+  background-color: var(--primary-bg) !important;
+}
+
+.ant-pagination .ant-pagination-item-active a {
+  color: var(--primary-color) !important;
+}
+
+.ant-pagination .ant-pagination-prev button,
+.ant-pagination .ant-pagination-next button {
+  color: var(--text-secondary) !important;
+}
+
+.ant-table-selection-column {
+  width: 48px !important;
+  min-width: 48px !important;
+}
+
+.ant-table-row-expand-icon {
+  border-color: var(--border-light) !important;
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-secondary) !important;
+}
+
+.ant-table-cell-scrollbar {
+  background-color: transparent !important;
+}
+
+[data-theme='dark'] .ant-table-thead > tr > th {
+  background-color: var(--bg-tertiary) !important;
+}
+
+[data-theme='dark'] .ant-table-tbody > tr:hover > td {
+  background-color: var(--bg-hover) !important;
+}
+
+[data-theme='dark'] .ant-table-filter-dropdown {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4) !important;
+}

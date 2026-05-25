@@ -1,0 +1,52 @@
+.ant-descriptions-view {
+  border-radius: var(--radius-md, 8px) !important;
+  overflow: hidden !important;
+}
+
+.ant-descriptions-item-label {
+  background-color: var(--bg-tertiary) !important;
+  color: var(--text-secondary) !important;
+  font-size: 13px !important;
+  border-color: var(--border-light) !important;
+}
+
+.ant-descriptions-item-content {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  font-size: 13px !important;
+  border-color: var(--border-light) !important;
+}
+
+.ant-descriptions-row {
+  border-color: var(--border-light) !important;
+}
+
+.ant-descriptions-row > td,
+.ant-descriptions-row > th {
+  border-color: var(--border-light) !important;
+  padding: 8px 14px !important;
+}
+
+.ant-descriptions-title {
+  color: var(--text-primary) !important;
+}
+
+.ant-descriptions-extra {
+  color: var(--text-secondary) !important;
+}
+
+.ant-descriptions-bordered .ant-descriptions-item-label {
+  background-color: var(--bg-tertiary) !important;
+}
+
+.ant-descriptions-bordered .ant-descriptions-item-content {
+  background-color: var(--bg-secondary) !important;
+}
+
+[data-theme='dark'] .ant-descriptions-item-label {
+  background-color: var(--bg-tertiary) !important;
+}
+
+[data-theme='dark'] .ant-descriptions-item-content {
+  background-color: var(--bg-secondary) !important;
+}

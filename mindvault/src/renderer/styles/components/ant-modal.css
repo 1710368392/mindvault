@@ -1,0 +1,104 @@
+.ant-modal-mask {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+}
+
+/* 确保 Modal 确认对话框始终在最上层 */
+.ant-modal-wrap {
+  z-index: 10000 !important;
+}
+
+.ant-modal-content {
+  background-color: var(--bg-secondary) !important;
+  border-radius: var(--radius-xl, 20px) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+  padding: 0 !important;
+}
+
+.ant-modal-header {
+  background-color: var(--bg-secondary) !important;
+  border-bottom: 1px solid var(--border-light) !important;
+  border-radius: var(--radius-xl, 20px) var(--radius-xl, 20px) 0 0 !important;
+  padding: 16px 24px !important;
+}
+
+.ant-modal-title {
+  color: var(--text-primary) !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+}
+
+.ant-modal-close {
+  color: var(--text-secondary) !important;
+  top: 12px !important;
+  right: 12px !important;
+}
+
+.ant-modal-close:hover {
+  color: var(--text-primary) !important;
+  background-color: var(--bg-hover) !important;
+  border-radius: var(--radius-full, 50%) !important;
+}
+
+.ant-modal-body {
+  color: var(--text-secondary) !important;
+  padding: 24px !important;
+}
+
+.ant-modal-footer {
+  border-top: 1px solid var(--border-light) !important;
+  padding: 12px 24px !important;
+}
+
+.ant-modal .ant-btn-primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-light)) !important;
+  border-color: var(--primary-color) !important;
+  border-radius: var(--radius-md, 10px) !important;
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.25) !important;
+}
+
+.ant-modal .ant-btn-primary:hover {
+  background: linear-gradient(135deg, var(--primary-hover), var(--primary-color)) !important;
+  border-color: var(--primary-hover) !important;
+}
+
+.ant-modal .ant-btn-dangerous-primary {
+  background: var(--error-color) !important;
+  border-color: var(--error-color) !important;
+  border-radius: var(--radius-md, 10px) !important;
+}
+
+.ant-modal .ant-btn-dangerous-primary:hover {
+  opacity: 0.85 !important;
+}
+
+.ant-modal .ant-btn-default {
+  background-color: var(--bg-secondary) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-primary) !important;
+  border-radius: var(--radius-md, 10px) !important;
+}
+
+.ant-modal .ant-btn-default:hover {
+  color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  background-color: var(--bg-hover) !important;
+}
+
+[data-theme='dark'] .ant-modal-content {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4) !important;
+}
+
+[data-theme='dark'] .ant-modal-mask {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+[data-theme='dark'] .ant-modal .ant-btn-default {
+  background-color: var(--bg-tertiary) !important;
+}
+
+[data-theme='dark'] .ant-modal .ant-btn-default:hover {
+  background-color: var(--bg-secondary) !important;
+}

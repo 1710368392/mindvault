@@ -1,0 +1,106 @@
+{
+  "name": "脑洞集UI设计资源库",
+  "version": "1.0.0",
+  "description": "为脑洞集项目整理的UI设计素材资源配置",
+  "createdAt": "2026-04-22",
+  "resources": {
+    "icons": [
+      {
+        "name": "Iconfont - 阿里巴巴矢量图标库",
+        "url": "https://www.iconfont.cn/",
+        "description": "海量免费矢量图标，支持图标库、矢量插画库、3D插画库、动效库",
+        "features": ["多色图标", "自定义颜色", "矢量格式", "图标搜索"],
+        "priority": 1
+      },
+      {
+        "name": "Yesicon - 精选全球高品质图标",
+        "url": "https://yesicon.app/",
+        "description": "294,569+ 精选开源免费图标，中英文搜索",
+        "features": ["海量图标", "开源免费", "多种风格", "中英文搜索"],
+        "priority": 2
+      }
+    ],
+    "images": [
+      {
+        "name": "免抠图片网",
+        "url": "https://miankoutupian.com/",
+        "description": "大量免费PNG透明背景图片、免抠素材、设计素材",
+        "features": ["PNG透明背景", "免抠素材", "设计素材"],
+        "priority": 1
+      }
+    ],
+    "fonts": [
+      {
+        "name": "字体工具网站",
+        "url": "https://font.ittools.cc/",
+        "description": "字体相关工具，字体处理",
+        "features": ["字体工具", "字体处理"],
+        "priority": 1
+      }
+    ],
+    "references": [
+      {
+        "name": "Ant Design - 企业级UI设计语言",
+        "url": "https://ant-design.antgroup.com/components/overview-cn",
+        "description": "完整的组件库、设计规范、最佳实践",
+        "features": ["组件库", "设计规范", "最佳实践"],
+        "priority": 1
+      },
+      {
+        "name": "Freestylized - 设计工具",
+        "url": "https://freestylized.com/",
+        "description": "设计辅助工具，风格探索",
+        "features": ["设计工具", "风格探索"],
+        "priority": 2
+      }
+    ]
+  },
+  "projectConfig": {
+    "name": "脑洞集",
+    "themeColors": {
+      "primary": "#6C63FF",
+      "primaryLight": "#8B85FF",
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "info": "#3B82F6",
+      "error": "#EF4444"
+    },
+    "fonts": {
+      "title": "字制区喜脉体",
+      "body": "资源圆润体",
+      "special": "玄宗体",
+      "english": "NamskowWhite"
+    },
+    "radius": {
+      "sm": "6px",
+      "md": "10px",
+      "lg": "16px",
+      "xl": "20px",
+      "full": "9999px"
+    },
+    "iconStyle": "linear",
+    "iconSizes": ["16px", "20px", "24px", "28px"]
+  },
+  "quickTasks": [
+    {
+      "task": "查找图标",
+      "description": "需要找一个图标时",
+      "recommendedSites": ["Iconfont", "Yesicon"]
+    },
+    {
+      "task": "需要图片素材",
+      "description": "需要装饰图片或空状态插图时",
+      "recommendedSites": ["免抠图片网"]
+    },
+    {
+      "task": "设计参考",
+      "description": "需要组件设计参考时",
+      "recommendedSites": ["Ant Design"]
+    },
+    {
+      "task": "字体处理",
+      "description": "需要处理字体时",
+      "recommendedSites": ["字体工具网站"]
+    }
+  ]
+}

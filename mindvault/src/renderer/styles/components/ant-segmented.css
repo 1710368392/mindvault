@@ -1,0 +1,56 @@
+.ant-segmented {
+  background-color: var(--bg-tertiary) !important;
+  border-radius: var(--radius-md, 8px) !important;
+  padding: 2px !important;
+}
+
+.ant-segmented-item {
+  color: var(--text-secondary) !important;
+  border-radius: var(--radius-sm, 6px) !important;
+  transition: color 0.2s ease !important;
+}
+
+.ant-segmented-item:hover {
+  color: var(--text-primary) !important;
+}
+
+.ant-segmented-item-selected {
+  color: var(--primary-color) !important;
+  background-color: var(--bg-secondary) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.ant-segmented-thumb {
+  background-color: var(--bg-secondary) !important;
+  box-shadow: var(--shadow-sm) !important;
+  border-radius: var(--radius-sm, 6px) !important;
+}
+
+.ant-segmented-item-label {
+  font-size: 13px !important;
+  min-height: 28px !important;
+  line-height: 28px !important;
+}
+
+.ant-segmented-sm .ant-segmented-item-label {
+  font-size: 12px !important;
+  min-height: 24px !important;
+  line-height: 24px !important;
+}
+
+.ant-segmented-item-disabled {
+  color: var(--text-tertiary) !important;
+  cursor: not-allowed !important;
+}
+
+[data-theme='dark'] .ant-segmented {
+  background-color: var(--bg-tertiary) !important;
+}
+
+[data-theme='dark'] .ant-segmented-item-selected {
+  background-color: var(--bg-secondary) !important;
+}
+
+[data-theme='dark'] .ant-segmented-thumb {
+  background-color: var(--bg-secondary) !important;
+}

@@ -1,0 +1,19 @@
+.ant-select-auto-complete .ant-select-selector {
+  background-color: var(--bg-primary) !important;
+  border-color: var(--border-color) !important;
+  border-radius: 8px !important;
+  color: var(--text-primary) !important;
+}
+
+.ant-select-auto-complete .ant-select-selection-search-input {
+  color: var(--text-primary) !important;
+}
+
+.ant-select-auto-complete .ant-select-selection-placeholder {
+  color: var(--text-tertiary) !important;
+}
+
+.ant-select-auto-complete.ant-select-focused .ant-select-selector {
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 2px var(--primary-bg) !important;
+}

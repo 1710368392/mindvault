@@ -1,0 +1,35 @@
+.ant-typography {
+  color: var(--text-primary) !important;
+}
+
+.ant-typography.ant-typography-secondary {
+  color: var(--text-secondary) !important;
+}
+
+.ant-typography-copy {
+  color: var(--text-tertiary) !important;
+}
+
+.ant-typography-copy:hover {
+  color: var(--primary-color) !important;
+}
+
+.ant-typography-ellipsis-action {
+  color: var(--text-tertiary) !important;
+}
+
+[data-theme='dark'] .ant-typography {
+  color: var(--text-primary) !important;
+}
+
+[data-theme='dark'] .ant-typography.ant-typography-secondary {
+  color: var(--text-secondary) !important;
+}
+
+[data-theme='dark'] .ant-typography-copy {
+  color: var(--text-tertiary) !important;
+}
+
+[data-theme='dark'] .ant-typography-copy:hover {
+  color: var(--primary-color) !important;
+}

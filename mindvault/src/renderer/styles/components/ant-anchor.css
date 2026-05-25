@@ -1,0 +1,57 @@
+.ant-anchor-wrapper {
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+
+.ant-anchor-link {
+  padding: 6px 0 6px 12px !important;
+  border-left: 2px solid var(--border-light) !important;
+  transition: all 0.2s ease !important;
+}
+
+.ant-anchor-link-title {
+  color: var(--text-tertiary) !important;
+  font-size: 13px !important;
+  transition: all 0.2s ease !important;
+}
+
+.ant-anchor-link-active > .ant-anchor-link-title {
+  color: var(--primary-color) !important;
+  font-weight: 600 !important;
+}
+
+.ant-anchor-link-active {
+  border-left-color: var(--primary-color) !important;
+}
+
+.ant-anchor-link:hover > .ant-anchor-link-title {
+  color: var(--primary-color) !important;
+}
+
+.ant-anchor-link:hover {
+  border-left-color: var(--primary-color) !important;
+}
+
+.ant-anchor-ink {
+  display: none !important;
+}
+
+.ant-anchor-ink-ball {
+  display: none !important;
+}
+
+[data-theme='dark'] .ant-anchor-link-title {
+  color: var(--text-tertiary) !important;
+}
+
+[data-theme='dark'] .ant-anchor-link-active > .ant-anchor-link-title {
+  color: var(--primary-color) !important;
+}
+
+[data-theme='dark'] .ant-anchor-link {
+  border-left-color: var(--border-light) !important;
+}
+
+[data-theme='dark'] .ant-anchor-link-active {
+  border-left-color: var(--primary-color) !important;
+}

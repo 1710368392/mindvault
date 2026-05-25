@@ -1,0 +1,42 @@
+.ant-message-notice-content {
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--radius-md) !important;
+  box-shadow: var(--shadow-md) !important;
+  color: var(--text-primary) !important;
+  padding: 9px 16px !important;
+}
+
+.ant-message .anticon {
+  color: var(--primary-color) !important;
+}
+
+.ant-message-success .anticon {
+  color: var(--success-color) !important;
+}
+
+.ant-message-error .anticon {
+  color: var(--error-color) !important;
+}
+
+.ant-message-warning .anticon {
+  color: var(--warning-color) !important;
+}
+
+.ant-message-info .anticon {
+  color: var(--info-color) !important;
+}
+
+.ant-message-notice-content .ant-message-custom-content {
+  color: var(--text-primary) !important;
+}
+
+[data-theme='dark'] .ant-message-notice-content {
+  background: var(--bg-secondary) !important;
+  border-color: var(--border-color) !important;
+  box-shadow: var(--shadow-lg) !important;
+}
+
+[data-theme='dark'] .ant-message-notice-content .ant-message-custom-content {
+  color: var(--text-primary) !important;
+}

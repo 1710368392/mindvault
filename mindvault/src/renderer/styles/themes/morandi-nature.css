@@ -1,0 +1,110 @@
+/* ===== 自然莫兰迪主题 ===== */
+/* 清新自然的莫兰迪色系，灵感源自森林与草地，适合自然清新的创作环境 */
+
+[data-theme="morandi-nature"] {
+  /* 主色调 */
+  --primary-color: #8FA882;
+  --primary-hover: #6E8A5A;
+  --primary-light: #A3B896;
+  --primary-bg: rgba(143, 168, 130, 0.12);
+
+  /* 背景色 */
+  --bg-primary: #EDF2E8;
+  --bg-secondary: #F5F8F2;
+  --bg-card: #F5F8F2;
+  --bg-tertiary: #E3EBDE;
+  --bg-hover: rgba(143, 168, 130, 0.08);
+  --bg-active: rgba(143, 168, 130, 0.15);
+
+  /* 文字色 */
+  --text-primary: #4A5D3D;
+  --text-secondary: #6B8460;
+  --text-tertiary: #8FA882;
+  --text-inverse: #FFFFFF;
+
+  /* 强调色 */
+  --accent-primary: #8FA882;
+  --accent-secondary: #A3B896;
+  --accent-success: #8FB89C;
+  --accent-warning: #B2A88F;
+  --accent-danger: #B28F8F;
+
+  /* 边框 */
+  --border-color: #C8D4C2;
+  --border-light: #DAE3D6;
+  --border-focus: #8FA882;
+
+  /* 阴影 */
+  --shadow-sm: 0 1px 2px rgba(74, 93, 61, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(74, 93, 61, 0.06), 0 2px 4px -2px rgba(74, 93, 61, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(74, 93, 61, 0.08), 0 4px 6px -4px rgba(74, 93, 61, 0.04);
+  --shadow-xl: 0 20px 25px -5px rgba(74, 93, 61, 0.08), 0 8px 10px -6px rgba(74, 93, 61, 0.04);
+
+  /* 侧边栏 */
+  --sidebar-bg: #F5F8F2;
+  --sidebar-border: #C8D4C2;
+
+  /* 顶部栏 */
+  --header-bg: rgba(245, 248, 242, 0.85);
+
+  /* 卡片 */
+  --card-bg: #F5F8F2;
+  --card-hover-bg: #EDF2E8;
+  --card-shadow: 0 2px 8px rgba(74, 93, 61, 0.06);
+  --card-hover-shadow: 0 8px 24px rgba(74, 93, 61, 0.1);
+
+  /* 状态色 */
+  --success-color: #8FB89C;
+  --success-light: #B0C8A8;
+  --warning-color: #B2A88F;
+  --warning-light: #C8BC9E;
+  --error-color: #B28F8F;
+  --info-color: #8FA4B2;
+
+  /* 便利贴色系 */
+  --sticky-note-yellow: #F0EDD4;
+  --sticky-note-green: #DDE8D8;
+  --sticky-note-blue: #D4E0E4;
+  --sticky-note-pink: #E8D8D8;
+  --sticky-note-purple: #DED8E4;
+  --sticky-note-orange: #E8E0D0;
+  --sticky-note-white: #F5F8F2;
+  --sticky-note-gray: #DEE2DE;
+
+  /* 莫兰迪色系 */
+  --morandi-yellow: #F0EDD4;
+  --morandi-green: #DDE8D8;
+  --morandi-blue: #D4E0E4;
+  --morandi-pink: #E8D8D8;
+  --morandi-purple: #DED8E4;
+  --morandi-orange: #E8E0D0;
+  --morandi-white: #F5F8F2;
+  --morandi-gray: #DEE2DE;
+}
+
+/* 自然莫兰迪主题滚动条 */
+[data-theme="morandi-nature"] ::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+[data-theme="morandi-nature"] :hover::-webkit-scrollbar-thumb {
+  background-color: rgba(74, 93, 61, 0.12);
+}
+
+[data-theme="morandi-nature"] ::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(74, 93, 61, 0.25);
+}
+
+[data-theme="morandi-nature"] * {
+  scrollbar-color: transparent transparent;
+}
+
+[data-theme="morandi-nature"] *:hover {
+  scrollbar-color: rgba(74, 93, 61, 0.12) transparent;
+}
+
+/* 自然莫兰迪主题选中文字 */
+[data-theme="morandi-nature"] ::selection {
+  background-color: rgba(143, 168, 130, 0.25);
+  color: var(--text-primary);
+}

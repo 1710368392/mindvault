@@ -1,0 +1,51 @@
+.ant-menu {
+  background: transparent !important;
+}
+
+/* 子菜单弹出层背景 - 修复透明问题 */
+.ant-menu-submenu-popup .ant-menu,
+.ant-menu-submenu-popup .ant-menu-sub {
+  background: var(--bg-secondary) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* 子菜单弹出层 z-index - 确保高于搜索对话框 */
+.ant-menu-submenu-popup {
+  z-index: 100000 !important;
+}
+
+.ant-menu-submenu-popup .ant-menu-item {
+  background: transparent !important;
+}
+
+.ant-menu-item {
+  color: var(--text-primary) !important;
+}
+
+.ant-menu-item:hover {
+  color: var(--text-primary) !important;
+  background-color: var(--bg-hover) !important;
+}
+
+.ant-menu-item-danger {
+  color: var(--error-color) !important;
+}
+
+.ant-menu-item-danger:hover {
+  color: var(--error-color) !important;
+  background-color: var(--error-bg) !important;
+}
+
+.ant-menu-item-selected {
+  color: var(--primary-color) !important;
+  background-color: var(--primary-bg) !important;
+}
+
+.ant-menu-item .ant-menu-item-icon {
+  display: none !important;
+}
+
+.ant-menu-item .ant-menu-title-content {
+  margin-inline-start: 0 !important;
+}

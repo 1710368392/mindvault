@@ -1,0 +1,11 @@
+:root {
+  --cursor-enabled: 1;
+}
+
+html[data-custom-cursor="true"] {
+  cursor: none !important;
+}
+
+html[data-custom-cursor="true"] * {
+  cursor: none !important;
+}

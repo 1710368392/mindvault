@@ -1,0 +1,37 @@
+{
+  "env": {
+    "browser": true,
+    "es2022": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-undef": "warn",
+    "no-console": "off",
+    "no-empty": "off",
+    "no-extra-semi": "warn",
+    "no-unreachable": "warn",
+    "no-constant-condition": "warn",
+    "no-dupe-keys": "warn",
+    "no-duplicate-case": "warn",
+    "no-sparse-arrays": "warn",
+    "no-prototype-builtins": "off",
+    "no-inner-declarations": "off",
+    "no-redeclare": "warn",
+    "no-fallthrough": "off",
+    "no-case-declarations": "off",
+    "no-async-promise-executor": "off",
+    "prefer-const": "warn",
+    "no-var": "warn"
+  }
+}

@@ -1,0 +1,34 @@
+.ant-popover .ant-popover-inner {
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: var(--shadow-lg) !important;
+}
+
+.ant-popover .ant-popover-title {
+  color: var(--text-primary) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.ant-popover .ant-popover-inner-content {
+  color: var(--text-secondary) !important;
+}
+
+.ant-popover .ant-popover-arrow::before {
+  background: var(--bg-secondary) !important;
+}
+
+[data-theme='dark'] .ant-popover .ant-popover-inner {
+  background: var(--bg-secondary) !important;
+  border-color: var(--border-color) !important;
+  box-shadow: var(--shadow-xl) !important;
+}
+
+[data-theme='dark'] .ant-popover .ant-popover-title {
+  color: var(--text-primary) !important;
+  border-bottom-color: var(--border-color) !important;
+}
+
+[data-theme='dark'] .ant-popover .ant-popover-inner-content {
+  color: var(--text-secondary) !important;
+}
